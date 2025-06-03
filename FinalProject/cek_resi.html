@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelican Expedition - Cek Resi</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="main-menu">
+        <div class="container">
+            <img src="img/capybara.png" alt="Capybara Expedition Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="cek_resi.php">Cek Resi</a></li>
+                <li><a href="contact.html">About Us</a></li>
+                <li><a href="my_account.php">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="introduce">
+        <h1>Hasil Pencarian Resi</h1>
+        <form method="post" action="cek_resi.php">
+            <input type="text" name="tracking_number" placeholder="Masukkan Nomor Resi" required>
+            <button type="submit">Cek Resi</button>
+        </form>
+        <div class="shipment-details">
+            <p><strong>Nomor Resi:</strong> </p>
+            <p><strong>Status:</strong> </p>
+            <p><strong>Tanggal Pengiriman:</strong> </p>
+            <p><strong>Pengirim:</strong> </p>
+            <p><strong>Penerima:</strong> </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Capybara Expedition. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

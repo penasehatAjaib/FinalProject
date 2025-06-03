@@ -1,0 +1,443 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(243, 104, 24);
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color:rgb(131, 77, 10);
+}
+
+.error {
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.footer {
+    background-color:rgb(77, 34, 4);
+    color:#fff;
+    font-family: Arial;
+    text-align: center;
+    padding: 5px auto;
+    position: flex;  
+    display: flex;
+}
+
+.home_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.konten {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(248, 206, 142);
+}
+
+.konten h1 {
+    text-align: center;
+}
+.text {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.text p {
+    margin: 0;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 75%;
+}
+
+.main-menu {
+    background-color:rgb(255, 176, 79);
+    padding: 1rem;
+    position: relative;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu .container {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu .logo {
+    height: 50px;
+    width: auto;
+    margin-right: 1rem; 
+}
+
+.main-menu h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-menu ul li {
+    margin-right: 1rem;
+}
+
+.main-menu a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.main-menu a:hover, .main-menu a:active {
+    background-color: black;
+    padding: 0.7rem;
+}
+
+#introduce {
+    justify-content: center;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10rem auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.my-account {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 3rem;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color:rgb(243, 174, 125);
+}
+
+.my-account h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.my-account .account-section {
+    margin-bottom: 1rem;
+}
+
+.my-account .account-section h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my-account .account-section p {
+    margin: 0.75rem 0;
+}
+
+.my-account .account-section .btn {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color:rgb(255, 170, 79);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.my-account .account-section .btn:hover {
+    background-color: #972c2cad;
+}
+
+#team {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+#team h2 {
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.team-member img {
+    border-radius: 50%;
+    height: 100px; /* Sesuaikan ukuran tinggi foto */
+    width: 100px; /* Sesuaikan ukuran lebar foto */
+    margin-right: 1rem;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-info h3 {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 0.5rem;
+}
+
+.social-media a {
+    margin-right: 0.5rem;
+    color:rgb(236, 154, 60);
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #972c2cad;
+}
+
+.cek-resi-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:rgb(253, 204, 99);
+    text-align: left;
+}
+
+.cek-resi-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.cek-resi-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cek-resi-form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color:rgb(244, 157, 94);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cek-resi-form button:hover {
+    background-color: #972c2cad;
+}
+
+.shipment-details {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:rgb(242, 191, 80);
+}
+
+.shipment-details p {
+    margin: 0.5rem 0;
+}
+
+.shipment-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.shipment-table th, .shipment-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+.shipment-table th {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    background-color:#f9f9f9;
+    padding: 2em 3em;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+form {
+    flex-direction: column;
+}
+
+.submit {
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, select, button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+}
+
+.table-container {
+    margin: 20px; /* Atur margin sesuai kebutuhan */
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd; /* Tambahkan garis pada sel */
+    padding: 8px; /* Atur padding */
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2; /* Warna latar belakang pada header */
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang abu-abu pada baris genap */
+}
+
+.user-table tr:hover {
+    background-color: #ddd; /* Warna latar belakang saat dihover */
+}
+
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.user-table th, .user-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+.user-table th {
+    background-color: #f2f2f2;
+}
